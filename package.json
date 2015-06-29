@@ -1,0 +1,20 @@
+{
+  "name": "NodeRESTAPIs",
+  "version": "0.0.1",
+  "description": "Sample Node REST app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js"
+  ],
+  "author": "Ravi",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.13.1",
+    "express": "^4.12.4"
+  }
+}
