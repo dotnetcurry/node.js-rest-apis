@@ -27,7 +27,7 @@ app.post('/api/cities', function(request, response){
 	console.log(city);
 	for(var index = 0; index < cities.length; index++){
 		if(cities[index].name === city.name){
-			response.status(500).send({error: "City already exists"});
+			response.status(409).send({error: "City already exists"});
 			return;
 		}
 	}
@@ -47,7 +47,7 @@ app.put('/api/cities/:name', function(request, response){
 		}
 	}
 	
-	response.status(500).send({error: 'City not found'});
+	response.status(404).send({error: 'City not found'});
 });
 
 app.listen(3000, function(){
